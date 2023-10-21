@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <h3>Calculator</h3>
+      <div class="display">
+        <input type="text" id="result" />
+      </div>
+      <div class="button">
+        <div class="row">
+          <button class="all-clear" onclick="clearResult()">AC</button>
+          <button class="oparetor" onclick="backspace()">←</button>
+          <button class="oparetor" onclick="displayValue('/')">÷</button>
+        </div>
+        <div class="row">
+          <button onclick="displayValue('7')">7</button>
+          <button onclick="displayValue('8')">8</button>
+          <button onclick="displayValue('9')">9</button>
+          <button class="oparetor" onclick="displayValue('*')">✖</button>
+        </div>
+        <div class="row">
+          <button onclick="displayValue('4')">4</button>
+          <button onclick="displayValue('5')">5</button>
+          <button onclick="displayValue('6')">6</button>
+          <button class="oparetor" onclick="displayValue('-')">-</button>
+        </div>
+        <div class="row">
+          <button onclick="displayValue('1')">1</button>
+          <button onclick="displayValue('2')">2</button>
+          <button onclick="displayValue('3')">3</button>
+          <button class="oparetor" onclick="displayValue('+')">+</button>
+        </div>
+        <div class="row">
+          <button onclick="displayValue('.')">.</button>
+          <button onclick="displayValue('0')">0</button>
+          <button class="equal" onclick="solve()">=</button>
+        </div>
+      </div>
+      <hr />
+      <h4>
+        Created & Designed by<br />
+        Jamirul Islam
+      </h4>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
